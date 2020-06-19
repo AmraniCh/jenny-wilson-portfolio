@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;   
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+button, input[type=button] {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        margin: 0;
+    }
+}

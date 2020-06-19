@@ -1,0 +1,36 @@
+%btn {
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 0 2px 3px 0 #EEE;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    
+    background-color: $primaryPink;
+    color: #FFF;
+    font-weight: bold;
+    width: 40%;
+    margin-right: 30px;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.btn-secondary {
+    @extend %btn;
+    
+    background-color: transparent;
+    border: 2px solid $primaryPink;
+    color: $textBlack;
+    width: 35%;
+}

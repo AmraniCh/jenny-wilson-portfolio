@@ -1,0 +1,8 @@
+#portofolio main.main-section #homePage {
+    @include mediaMin(1680px) {
+        & {
+            padding: 8em 0 0 6em;
+            background-size: 80%;
+        }
+    }
+}

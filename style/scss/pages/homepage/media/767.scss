@@ -1,0 +1,11 @@
+#portofolio main.main-section #homePage {
+    @include mediaMax(767px) {
+        & {
+            display: block;
+            background-color: #FFF;
+            color: $textBlack;
+            padding: 2em 1em;
+            background-image: none;
+        }
+    }
+}

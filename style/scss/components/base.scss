@@ -1,0 +1,9 @@
+#portofolio {
+    display: grid;
+    grid-template-columns: 22% auto;
+    grid-template-rows: 15% auto;
+    height: 100vh;
+    font-family: Montserrat, Helvetica, sans-serif;
+    color: $textBlack;
+    text-transform: capitalize;
+}

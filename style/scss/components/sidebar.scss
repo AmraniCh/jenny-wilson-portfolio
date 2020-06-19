@@ -1,0 +1,101 @@
+#portofolio aside.sidebar {
+        background-color: $secondaryPink;
+        height: 100vh;
+        width: auto;
+        box-shadow: 0 0 3px 0px #999;
+
+        .profile {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            padding: 1em;
+
+            .avatar {
+                @include makeBackgroundImage('../../images/avatar.png');
+                height: 80px;
+                width: 80px;
+                background-color: #FFF;
+                border-radius: 50%;
+            }
+
+            .info {
+                padding: 6px 16px;
+
+                .name {
+                    color: $primaryPink;
+                    font-weight: bold;
+                }
+
+                .title {
+                    opacity: .8;
+                }
+    
+                .title, .status  {
+                    font-size: .8em;
+                }
+
+                .status {
+                    padding-top: .6em;
+                    
+                    .icon {
+                        font-size: 1.2em;
+                        color: #364F6B;
+                    }
+
+                    .badge.online {
+                        background-color: $badgeStatusOnline;
+                        color: #FFF;
+                        padding: 2px 8px;
+                        border-radius: 5px;
+                        font-size: .8em;
+                        user-select: none;
+                    }
+                }
+            }
+        }
+
+        .navigation {
+            margin-top: 70px;
+            background-color: $navColor;
+            user-select: none;
+
+            ul {
+                li:not(:last-of-type) {
+                    font-size: .9em;
+                }
+
+                li {
+                    cursor: pointer;
+                    padding: 20px 15px;
+
+                    a {
+                        text-decoration: none;
+                        user-select: none;
+                        color: $textBlack;
+                    }
+
+                    &.active {
+                        background-color: $primaryPink;
+                        font-weight: Bold;
+                        
+                        a {
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+
+        .menu-icon-mobile {
+            border: none;
+            color: $primaryPink;
+            display: none;
+
+            &:focus {
+                outline: none;
+            }
+
+            > i {
+                cursor: pointer;
+            }
+        }
+    }

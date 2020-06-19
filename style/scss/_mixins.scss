@@ -1,0 +1,17 @@
+@mixin makeBackgroundImage($path, $position: center center) {
+    background-image: url($path);
+    background-position: $position;
+    background-repeat: no-repeat;
+}
+
+@mixin mediaMin($min) {
+    @media all and (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin mediaMax($max) {
+    @media all and (max-width: $max) {
+        @content;
+    }
+}

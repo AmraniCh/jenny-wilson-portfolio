@@ -1,0 +1,26 @@
+#portofolio main.main-section #homePage {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    height: 100%;
+    padding: 5em 0 0 5em;
+
+    @include makeBackgroundImage('../../images/shape.svg');
+    background-position: bottom right;
+    background-size: 70%;
+
+    .title {
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    .description {
+        line-height: 1.8;
+    }
+
+    .actions {
+        margin-top: 40px;
+    }
+}
+
+@import 'media/767';
+@import 'media/1680';

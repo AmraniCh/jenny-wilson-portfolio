@@ -1,0 +1,90 @@
+#portofolio {
+    @include mediaMin(768px) {
+        aside.sidebar .navigation {
+            width: 100% !important; // animation reset
+        }
+    }
+
+    @include mediaMax(767px) {        
+        & {
+            font-size: .9em;
+            background: linear-gradient(-70deg, $secondaryPink, $primaryPink);
+            display: block;
+        }
+
+        aside.sidebar {
+            background-color: $thirdLinen;
+            display: grid;
+            grid-template-columns: auto 40px;
+            padding: 1em;
+            width: 100%;
+            height: auto;
+
+            .menu-icon-mobile {
+                display: block !important;
+            }
+    
+            .profile {
+                display: grid;
+                grid-template-columns: 15% auto;
+                padding: 0;
+
+                    
+                .avatar {
+                    height: 45px;
+                    width: 45px;
+                    background-size: cover;
+                    margin: auto;
+                }
+            }
+    
+            .navigation {
+                z-index: 9;
+                    background-color: #FFF;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100vh;
+                    width: 0%;
+                    transition: width .1s ease-in-out;
+                    overflow: hidden;
+                    margin-top: 0;
+                    text-transform: uppercase;
+    
+                ul li {
+                    &.active {
+                        background-color: transparent;
+                        > a {
+                            color: $primaryPink;
+                        }
+    
+                        &:after {
+                            content: "";
+                            height: 2px;
+                            width: 25px;
+                            background-color: $primaryPink;
+                            display: block;
+                        }
+                    }
+                }
+            }
+    
+            .status {
+                display: none;
+            }
+        }
+
+        header.header {
+            display: none;
+        }
+
+        main.main-section {
+            display: block;
+            padding: 4em 0;
+
+            .messenger-btn {
+                bottom: 0;
+            }
+        }
+    }
+}

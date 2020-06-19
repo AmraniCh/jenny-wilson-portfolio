@@ -1,0 +1,14 @@
+{
+  "name": "web-designer-portofolio-1",
+  "version": "1.0.0",
+  "description": "Web Designer Portofolio",
+  "scripts": {
+    "styles": "node_modules/.bin/node-sass style/scss/style.scss style/css/style.min.css --watch --output-style compressed"
+  },
+  "keywords": [],
+  "author": "EL AMRANI CHAKIR",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

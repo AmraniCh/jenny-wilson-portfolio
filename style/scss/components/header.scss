@@ -1,0 +1,26 @@
+#portofolio header.header {
+    background: $thirdLinen;
+    display: inline-block;
+    padding: 1em 1.2em;
+    box-shadow: 0 0 3px 0px #999;
+
+    
+    .header-container {
+        display: grid;
+        grid-template-columns: auto 10%;
+        align-items: center;
+        height: 100%;
+
+        .nav-title {
+            .title {
+                display: inline-block;
+                margin-left: .5em;
+                vertical-align: middle;
+            }
+        }
+
+        .header-nav {
+            text-align: right;
+        }
+    }
+}
