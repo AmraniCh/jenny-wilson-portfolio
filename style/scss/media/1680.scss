@@ -22,5 +22,15 @@
         header.header {
             padding: 1.5em 1.7em;
         }
+
+        main.main-section {
+            .messenger-btn {
+                right: 1.7em;
+            }
+        }
+
+        .btn-icon {
+            font-size: 1em;
+        }
     }
 }

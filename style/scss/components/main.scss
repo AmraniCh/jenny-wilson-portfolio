@@ -1,19 +1,10 @@
 #portofolio main.main-section {
-        position: relative;
-        grid-column: 2/3;
+    position: relative;
+    grid-column: 2/3;
 
-        .messenger-btn {
-            position: absolute;
-            right: 1.7em;
-            bottom: 1em;
-        }
+    .messenger-btn {
+        position: absolute;
+        right: 1.1em;
+        bottom: 1em;
     }
-
-    .icon {
-        color: $primaryPink;
-        font-size: 1.5em;
-    }
-
-    .btn-icon {
-        font-size: 1.1em;
-    }
+}

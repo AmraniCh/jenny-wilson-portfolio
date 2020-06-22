@@ -25,7 +25,7 @@
                 links.forEach(function(item) {
                     item.classList.remove('active');
                 });
-                item.classList.toggle('active');
+                item.classList.add('active');
             });
         });
     }

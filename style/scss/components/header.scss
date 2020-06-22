@@ -3,7 +3,6 @@
     display: inline-block;
     padding: 1em 1.2em;
     box-shadow: 0 0 3px 0px #999;
-
     
     .header-container {
         display: grid;
@@ -12,10 +11,14 @@
         height: 100%;
 
         .nav-title {
+            .icon {
+                vertical-align: middle;
+            }
+
             .title {
                 display: inline-block;
                 margin-left: .5em;
-                vertical-align: middle;
+                vertical-align: sub;
             }
         }
 
